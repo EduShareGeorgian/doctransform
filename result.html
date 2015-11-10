@@ -1,0 +1,2259 @@
+<HTML xmlns:ColTrn="urn:org:pesc:message:CollegeTranscript:v1.3.0" xmlns:core="urn:org:pesc:core:CoreMain:v1.10.0" xmlns:ext="urn:ca:ocas:useextensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AcRec="urn:org:pesc:sector:AcademicRecord:v1.6.0">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE TYPE="text/css">
+          .centeraligntext {
+          text-align: center;
+          }
+          .leftaligntext {
+          text-align: left;
+          }
+          .rightaligntext {
+          text-align: right;
+          }
+          .menulisttext {
+          list-style: none;
+          }
+          .captiontext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: italic;
+          text-align: left;
+          margin-top: .5em;
+          margin-bottom: .5em;
+          }
+          .skiplinks {
+          display: none;
+          }
+          .pageheaderlinks {
+          color: #FFFFFF;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: center;
+          }
+          .requirementnotmet {
+          color: black;
+          }
+          .pageheaderlinks2 {
+          color: #CED5EA;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-size: 90%;
+          text-align: justify;
+          }
+          .pagebodylinks {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: center;
+          }
+          .gotoanchorlinks {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .pagefooterlinks {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: center;
+          margin-left: 3px;
+          }
+          .backlinktext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: right;
+          margin-bottom: 5px;
+          }
+          .menuheadertext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 100%;
+          font-style: normal;
+          text-align: left;
+          }
+          .menulinktext {
+          color: #0F2167;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          }
+          .menulinkdesctext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .normaltext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .infotext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .errortext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .warningtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .multipagemsgtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .releasetext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          text-transform: uppercase;
+          }
+          .requiredmsgtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldlabeltext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldlabeltextinvisible {
+          display: none;
+          }
+          .fieldrequiredtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldformattext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldformatboldtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fielderrortext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldsmallboldtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldsmalltext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldmediumtext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldlargetext {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 110%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldmediumtextbold {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          .fieldOrangetextbold {
+          color: ORANGE;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          A:link{color:#0000ff;text-decoration:none;}
+          A:visited{color:#660099;text-decoration:none;}
+          A:active{color:#990000;}
+          A:hover{color:#990000;text-decoration:underline;}
+          A.menulinktext {
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          color:#0000ff;
+          text-decoration: none;
+          }
+          A.submenulinktext {
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-transform: none;
+          color:#0000ff;
+          text-decoration: none;
+          }
+          A.submenulinktext:hover {
+          background-color: #1E2B83;
+          font-family:  verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: justify;
+          text-transform: none;
+          color: #FFFFFF;
+          text-decoration: none;
+          }
+          A.submenulinktext:visited {
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-transform: none;
+          color:#660099;
+          text-decoration: none;
+          }
+          A.submenulinktext:visited:hover {
+          background-color: #1E2B83;
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: justify;
+          text-transform: none;
+          color: #FFFFFF;
+          text-decoration: none;
+          }
+          A.submenulinktext2 {
+          font-weight: normal;
+          font-size: 90%;
+          color:#0000ff;
+          text-decoration:none;
+          }
+          A.submenulinktext2:hover {
+          font-weight: normal;
+          font-size: 90%;
+          color:#990000;
+          text-decoration:underline;
+          }
+          A.submenulinktext2:visited {
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          color:#660099;;
+          text-decoration: none;
+          }
+          A.submenulinktext2:visited:hover {
+          font-family:  Verdana,Arial Narrow, helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          text-decoration:underline;
+          color:#990000;
+          }
+          A.whitespacelink
+          {
+          line-height: 200%;
+          COLOR: #1E2B83;
+          text-decoration: underline;
+          }
+          A.largelinktext {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 110%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: underline;
+          }
+          A.sitemaplevel1 {
+          font-family:  Verdana,Arial, helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 80%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:       #1E2B83;
+          }
+          A.sitemaplevel1:visited {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel1:hover {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration:underline;
+          color:#990000;
+          }
+          A.sitemaplevel2 {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 70%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:#0000ff;
+          }
+          a.sitemaplevel2:visited {
+          font-family:  Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 70%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel2:hover {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size  : 70%;
+          font-style : normal;
+          text-align : left;
+          text-decoration:underline;
+          color:#990000;
+          }
+          A.sitemaplevel3 {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 60%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:#0000ff;
+          }
+          A.sitemaplevel3:visited {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 60%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel3:hover {
+          font-family: Verdana,Arial,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size  : 70%;
+          font-style : normal;
+          text-align : left;
+          color:#990000;
+          text-decoration:underline;
+          }
+          A.whitespacelink
+          {
+          line-height: 200%;
+          color: black;
+          text-decoration: underline;
+          }
+          A.largelinktext {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 120%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: underline;
+          }
+          A.sitemaplevel1 {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 80%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:#0000ff;
+          }
+          A.sitemaplevel1:visited {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel1:hover {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration:underline;
+          color:#990000;
+          }
+          A.sitemaplevel2 {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 80%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:#0000ff;
+          }
+          A.sitemaplevel2:visited {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel2:hover {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 80%;
+          font-style : normal;
+          text-align : left;
+          text-decoration:underline;
+          color:#990000;
+          }
+          A.sitemaplevel3 {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 60%;
+          font-style: normal;
+          text-align: left;
+          text-decoration: none;
+          color:#0000ff;
+          }
+          A.sitemaplevel3:visited {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 60%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          color:#660099;
+          }
+          A.sitemaplevel3:hover {
+          font-family: Verdana, Arial,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size  : 60%;
+          font-style : normal;
+          text-align : left;
+          text-decoration: none;
+          text-decoration:underline;
+          color:#990000;
+          }
+          .whitespace1{
+          padding-top:0em;
+          }
+          .whitespace2{
+          padding-top:1em;
+          }
+          .whitespace3{
+          padding-top:2em;
+          }
+          .whitespace4{
+          padding-top:3em;
+          }
+          BODY {
+          background-color: #FFFFFF;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-style: normal;
+          text-align: left;
+          margin-top: 0px;
+          margin-left: 1%;
+          margin-right: 2%;
+          background-image: url(web_bg_app.jpg);
+          background-repeat: no-repeat;
+          }
+          BODY.campuspipeline {
+          background-color: #FFFFFF;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-style: normal;
+          text-align: left;
+          margin-top: 6px;
+          margin-left: 2%;
+          background-image: none;
+          background-repeat: no-repeat;
+          }
+          BODY.previewbody {
+          background-color: #FFFFFF;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          margin-left: 2%;
+          margin-right: 2%;
+          background-image: none;
+          }
+          BODY.validationbody {
+          background-color: #FFFFFF;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          margin-left: 0%;
+          margin-right: 2%;
+          background-image: none;
+          }
+          DIV.menulistdiv {
+          text-align: left;
+          }
+          DIV.headerwrapperdiv {
+          margin-left: 0px;
+          margin-top: 0px;
+          }
+          DIV.pageheaderdiv1 {
+          text-align: left;
+          margin-top: 8%;
+          margin-left: 0px;
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          }
+          DIV.pageheaderdiv2 {
+          text-align: right;
+          margin-top: 10px;
+          margin-right: 10px;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          float: right;
+          display: none;
+          }
+          DIV.headerlinksdiv {
+          text-align: left;
+          margin-right: 0%;
+          }
+          DIV.headerlinksdiv2 {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          text-transform: none;
+          }
+          DIV.bodylinksdiv {
+          text-align: center;
+          margin-top: 1%;
+          }
+          DIV.footerlinksdiv {
+          text-align: center;
+          }
+          DIV.backlinkdiv {
+          text-align: right;
+          margin-top: -40px;
+          }
+          DIV.pagetitlediv {
+          text-align: left;
+          }
+          DIV.infotextdiv {
+          text-align: left;
+          }
+          DIV.pagebodydiv {
+          text-align: left;
+          }
+          DIV.pagefooterdiv {
+          text-align: left;
+          border: 0px;
+          margin-top: 0px;
+          float: left;
+          }
+          DIV.poweredbydiv {
+          text-align: right;
+          margin-right: -1px;
+          margin-top: 0px;
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          float: right;
+          }
+          DIV.previewdiv {
+          text-align: center;
+          }
+          DIV.validationdiv {
+          text-align: center;
+          }
+          DIV.staticheaders {
+          text-align: right;
+          font-size:  90%;
+          }
+          H1 {
+          color: #FFFFFF;
+          font-family: verdana, Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-style: normal;
+          font-size:0%;
+          margin-top: 0px;
+          }
+          H2 {
+          color	   : BLACK;
+          font-family: verdana, Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-style : normal;
+          }
+          H3 {
+          color	   : BLACK;
+          font-family: verdana, Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-style : normal;
+          }
+          HR {
+          color: #CCCC33;
+          text-align: left;
+          vertical-align: top;
+          margin-top: -10px;
+          HEIGHT="2"
+          }
+          HR.pageseprator {
+          color: #003366;
+          text-align: left;
+          vertical-align: top;
+          }
+          INPUT {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          }
+          TEXTAREA {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          }
+          SELECT {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          }
+          TABLE.dataentrytable {
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          }
+          TABLE.datadisplaytable {
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          }
+          TABLE.plaintable {
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          }
+          TABLE.menuplaintable {
+          border-top: 1pt #707070 solid;
+          }
+          TABLE.pageheadertable {
+          margin-top: 0px;
+          }
+          TABLE.colorsampletable {
+          background-color: #FFFFFF;
+          }
+          TABLE.bordertable {
+          border-collapse:collapse;
+          border-bottom: 1px solid;
+          border-left: 1px solid;
+          border-right: 1px solid;
+          border-top: 1px solid;
+          }
+          TABLE TH {
+          vertical-align: top;
+          color: black;
+          }
+          TABLE TD {
+          vertical-align: top;
+          color: black;
+          }
+          .pageheadertablecell {
+          text-align: left;
+          }
+          .pageheadernavlinkstablecell {
+          text-align: right;
+          }
+          TABLE TD.deheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.deheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.detitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TH.detitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TD.delabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.delabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.deseparator {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dehighlight {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dedead {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dedefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dewhite {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.deborder {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          border: 1px solid;
+          }
+          TABLE TD.ddheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.ddheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ddtitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TH.ddtitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TD.ddlabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.ddlabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ddseparator {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ddhighlight {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dddead {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.dddefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ddnontabular {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ddwhite {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.pltitle {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-weight: bold;
+          }
+          TABLE TD.plheader {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-size: 90%;
+          font-weight: bold;
+          }
+          TABLE TH.pllabel {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-size: 90%;
+          font-weight: bold;
+          }
+          TABLE TD.plseparator {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.plhighlight {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.pldead {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.pldefault {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.plwhite {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.plheaderlinks {
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          }
+          TABLE TD.plheadermenulinks {
+          font-weight: normal;
+          }
+          TABLE TD.mptitle {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.mpheader {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.mplabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.mpwhite {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.mpdefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.indefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          }
+          TABLE TD.dbheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          border: 1px solid;
+          }
+          TABLE TH.dbheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          border: 1px solid;
+          }
+          TABLE TD.dbtitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          border: 1px solid;
+          }
+          TABLE TH.dbtitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          border: 1px solid;
+          }
+          TABLE TD.dblabel {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          border: 1px solid;
+          }
+          TABLE TH.dblabel {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          border: 1px solid;
+          }
+          TABLE TD.dbdefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          border: 1px solid;
+          }
+          TABLE TD.ntheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.ntheader {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.nttitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TH.nttitle {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          padding-bottom: 1em;
+          }
+          TABLE TD.ntlabel {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TH.ntlabel {
+          background-color: #E3E5EE;
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ntseparator {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.nthighlight {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ntdead {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ntdefault {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          TABLE TD.ntwhite {
+          color: black;
+          font-family: Verdana,Arial Narrow,  helvetica, sans-serif;
+          font-weight: normal;
+          font-size: 90%;
+          font-style: normal;
+          text-align: left;
+          vertical-align: top;
+          }
+          .bgtabon {
+          BACKGROUND-COLOR: #003366
+          }
+          .bgtaboff {
+          BACKGROUND-COLOR: #cccccc
+          }
+          .texttabon {
+          COLOR: #ffffff
+          }
+          .texttaboff {
+          COLOR: #000000
+          }
+          .tabon {
+          PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif); COLOR: #ffffff; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #003366
+          }
+          .tabon A:link {
+          COLOR: #ffffff; TEXT-DECORATION: none
+          }
+          .tabon A:visited {
+          COLOR: #ffffff; TEXT-DECORATION: none
+          }
+          .tabon A:active {
+          COLOR: #ffffff; TEXT-DECORATION: none
+          }
+          .tabon A:hover {
+          COLOR: #ffffff; TEXT-DECORATION: none
+          }
+          .taboff {
+          PADDING-LEFT: 8px;
+          FONT-WEIGHT: bold;
+          FONT-SIZE: 12px;
+          BACKGROUND-IMAGE: url(/wtlgifs/web_tab_corner.gif);
+          COLOR: #000000;
+          BACKGROUND-REPEAT: no-repeat;
+          BACKGROUND-COLOR: #cccccc
+          }
+          .taboff A:link {
+          COLOR: #000000; TEXT-DECORATION: none
+          }
+          .taboff A:visited {
+          COLOR: #000000; TEXT-DECORATION: none
+          }
+          .taboff A:active {
+          COLOR: #000000; TEXT-DECORATION: none
+          }
+          .taboff A:hover {
+          COLOR: #000000; TEXT-DECORATION: none
+          }
+          .bg3 {
+          BACKGROUND-COLOR: #cccc00
+          }
+        </STYLE>
+</HEAD>
+<BR>
+<BR>
+<BODY>
+<div style="padding:20px;background: #004b87 url('http://www.georgiancollege.ca/wp-content/themes/georgian-college/images/headers/georgian-accelerator-header.png') 50% top no-repeat">
+<img style="height:50px" src="http://www.georgiancollege.ca/wp-content/themes/georgian-college/images/logos/georgian-college-logo-2014.svg"></div>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    XML Transcript Transmission Data." WIDTH="80%">
+<CAPTION class="captiontext">Transmission Data</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Transmission Data</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document ID : </TH><TD COLSPAN="10" CLASS="dddefault">3539002015-10-23T12:20:49.47</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document Creation : </TH><TD COLSPAN="10" CLASS="dddefault">2015-10-23T12:20:49.47</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document Type : </TH><TD COLSPAN="10" CLASS="dddefault">RequestedRecord</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Transmission Type : </TH><TD COLSPAN="10" CLASS="dddefault">Original</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Source : </TH><TD COLSPAN="10" CLASS="dddefault">Georgian College</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Contact Information : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH><TD COLSPAN="10" CLASS="dddefault">One Georgian Drive</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH><TD COLSPAN="10" CLASS="dddefault">Barrie&nbsp;&nbsp;</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Phone : </TH><TD COLSPAN="10" CLASS="dddefault">&nbsp;7281968</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Destination : </TH><TD COLSPAN="10" CLASS="dddefault">OCAS</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Contact Information : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH><TD COLSPAN="10" CLASS="dddefault">&nbsp;&nbsp;</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Phone : </TH><TD COLSPAN="10" CLASS="dddefault">&nbsp;</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document Process Code : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document Offical Code : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Document Complete Code : </TH><TD COLSPAN="10" CLASS="dddefault">Complete</TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Transcript Data</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Student Information</TH>
+</TR>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Please review the actual XML Document to confirm accuracy.</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Composite Name : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Full Name : </TH><TD COLSPAN="10" CLASS="dddefault">MissStephanie&nbsp;Ladouceur&nbsp;</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">ID : </TH><TD COLSPAN="10" CLASS="dddefault">020073455</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Birth Date : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">SSN : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Address : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH><TD COLSPAN="10" CLASS="dddefault">&nbsp;&nbsp;</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">High School :</TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Email :</TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<br>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Record Data</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Record</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Academic Award Type : </TH><TD COLSPAN="5" CLASS="dddefault">Cert of Professional Achiev</TD><TD COLSPAN="5" CLASS="dddefault">2008-03-11</TD>
+</TR>
+<TR>
+<TD COLSPAN="12" CLASS="dddead">&nbsp;</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Academic Award Type : </TH><TD COLSPAN="5" CLASS="dddefault">Advanced Diploma, Co-op</TD><TD COLSPAN="5" CLASS="dddefault">2007-08-24</TD>
+</TR>
+<TR>
+<TD COLSPAN="12" CLASS="dddead">&nbsp;</TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Academic Summary Type : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Academic Summary Level : </TH><TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Fall 2007</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Degree Bridge</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">83.50000</TD><TD COLSPAN="2" CLASS="dddefault">1503.000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1000</TD><TD COLSPAN="3" CLASS="dddefault">Business Decision Making</TD><TD CLASS="dddefault">83</TD><TD CLASS="dddefault">4.00000</TD><TD COLSPAN="4" CLASS="dddefault">332.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1001</TD><TD COLSPAN="3" CLASS="dddefault">Business Policy Essentials</TD><TD CLASS="dddefault">72</TD><TD CLASS="dddefault">2.00000</TD><TD COLSPAN="4" CLASS="dddefault">144.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1003</TD><TD COLSPAN="3" CLASS="dddefault">Learning Strategies</TD><TD CLASS="dddefault">98</TD><TD CLASS="dddefault">2.00000</TD><TD COLSPAN="4" CLASS="dddefault">196.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1002</TD><TD COLSPAN="3" CLASS="dddefault">Bridge Communications</TD><TD CLASS="dddefault">87</TD><TD CLASS="dddefault">4.00000</TD><TD COLSPAN="4" CLASS="dddefault">348.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1004</TD><TD COLSPAN="3" CLASS="dddefault">Data Analysis</TD><TD CLASS="dddefault">79</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">237.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUBR</TD><TD COLSPAN="2" CLASS="dddefault">1005</TD><TD COLSPAN="3" CLASS="dddefault">Essentials of Management</TD><TD CLASS="dddefault">82</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">246.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Fall 2003</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">71.80000</TD><TD COLSPAN="2" CLASS="dddefault">1293.000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">PSY</TD><TD COLSPAN="2" CLASS="dddefault">9101</TD><TD COLSPAN="3" CLASS="dddefault">INTRODUCTION TO PSYCHOLOGY</TD><TD CLASS="dddefault">81</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">243.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">COS</TD><TD COLSPAN="2" CLASS="dddefault">9105</TD><TD COLSPAN="3" CLASS="dddefault">COLLEGE COMMUNICATIONS</TD><TD CLASS="dddefault">61</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">183.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACC</TD><TD COLSPAN="2" CLASS="dddefault">2122</TD><TD COLSPAN="3" CLASS="dddefault">FINANCIAL ACCTG. PRINCIPLES 1</TD><TD CLASS="dddefault">86</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">258.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUS</TD><TD COLSPAN="2" CLASS="dddefault">9101</TD><TD COLSPAN="3" CLASS="dddefault">INTRODUCTION TO ORG BEHAVIOUR</TD><TD CLASS="dddefault">75</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">225.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">MAR</TD><TD COLSPAN="2" CLASS="dddefault">9103</TD><TD COLSPAN="3" CLASS="dddefault">MARKETING FOUNDATIONS</TD><TD CLASS="dddefault">69</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">207.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">MAT</TD><TD COLSPAN="2" CLASS="dddefault">9102</TD><TD COLSPAN="3" CLASS="dddefault">MATHEMATICS OF FINANCE</TD><TD CLASS="dddefault">59</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">177.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Winter 2004</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">66.20000</TD><TD COLSPAN="2" CLASS="dddefault">1191.000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">1001</TD><TD COLSPAN="3" CLASS="dddefault">Financial Acctg Principles 2</TD><TD CLASS="dddefault">53</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">159.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">1002</TD><TD COLSPAN="3" CLASS="dddefault">Computerized Accounting</TD><TD CLASS="dddefault">85</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">255.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">COMP</TD><TD COLSPAN="2" CLASS="dddefault">1003</TD><TD COLSPAN="3" CLASS="dddefault">Microcomputer Applications</TD><TD CLASS="dddefault">68</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">204.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ECON</TD><TD COLSPAN="2" CLASS="dddefault">1000</TD><TD COLSPAN="3" CLASS="dddefault">Microeconomics</TD><TD CLASS="dddefault">59</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">177.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">GNED</TD><TD COLSPAN="2" CLASS="dddefault">1011</TD><TD COLSPAN="3" CLASS="dddefault">Developing Leadership</TD><TD CLASS="dddefault">82</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">246.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">COMM</TD><TD COLSPAN="2" CLASS="dddefault">1001</TD><TD COLSPAN="3" CLASS="dddefault">Communications at Work</TD><TD CLASS="dddefault">50</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">150.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Summer 2004</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">COOP</TD><TD COLSPAN="2" CLASS="dddefault">1008</TD><TD COLSPAN="3" CLASS="dddefault">Business Work Term 1</TD><TD CLASS="dddefault">S</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Fall 2004</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault">9.00000</TD><TD COLSPAN="2" CLASS="dddefault">53.20000</TD><TD COLSPAN="2" CLASS="dddefault">798.000</TD><TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">2001</TD><TD COLSPAN="3" CLASS="dddefault">Intermediate Accounting 1</TD><TD CLASS="dddefault">55</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">165.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">2003</TD><TD COLSPAN="3" CLASS="dddefault">Cost Accounting 1</TD><TD CLASS="dddefault">38</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ECON</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Macroeconomics</TD><TD CLASS="dddefault">58</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">174.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">2002</TD><TD COLSPAN="3" CLASS="dddefault">Taxation</TD><TD CLASS="dddefault">68</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">204.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">STAT</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Statistics 1</TD><TD CLASS="dddefault">47</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Winter 2005</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">COOP</TD><TD COLSPAN="2" CLASS="dddefault">2006</TD><TD COLSPAN="3" CLASS="dddefault">Business Work Term 2</TD><TD CLASS="dddefault">S</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Summer 2005</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault">67.50000</TD><TD COLSPAN="2" CLASS="dddefault">1215.000</TD><TD COLSPAN="2" CLASS="dddefault">18.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">GNED</TD><TD COLSPAN="2" CLASS="dddefault">2067</TD><TD COLSPAN="3" CLASS="dddefault">Sport in Literature and Film</TD><TD CLASS="dddefault">82</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">246.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">STAT</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Statistics 1</TD><TD CLASS="dddefault">50</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">150.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Business Finance</TD><TD CLASS="dddefault">90</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">270.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUSI</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Entrepreneurship and Small Bus</TD><TD CLASS="dddefault">73</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">219.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">2002</TD><TD COLSPAN="3" CLASS="dddefault">Intermediate Accounting 2</TD><TD CLASS="dddefault">53</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">159.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">COMM</TD><TD COLSPAN="2" CLASS="dddefault">1004</TD><TD COLSPAN="3" CLASS="dddefault">World Links: Wired Comm</TD><TD CLASS="dddefault">57</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">171.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Fall 2005</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault">0.000</TD><TD COLSPAN="2" CLASS="dddefault">0.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">COOP</TD><TD COLSPAN="2" CLASS="dddefault">3000</TD><TD COLSPAN="3" CLASS="dddefault">Business Work Term 3</TD><TD CLASS="dddefault">S</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Winter 2006</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">9.00000</TD><TD COLSPAN="2" CLASS="dddefault">9.00000</TD><TD COLSPAN="2" CLASS="dddefault">59.30000</TD><TD COLSPAN="2" CLASS="dddefault">534.000</TD><TD COLSPAN="2" CLASS="dddefault">9.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">GNED</TD><TD COLSPAN="2" CLASS="dddefault">1034</TD><TD COLSPAN="3" CLASS="dddefault">The Role of Music in our Lives</TD><TD CLASS="dddefault">65</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">195.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">3003</TD><TD COLSPAN="3" CLASS="dddefault">Intermediate Accounting 3</TD><TD CLASS="dddefault">WD</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">2001</TD><TD COLSPAN="3" CLASS="dddefault">Managerial Finance</TD><TD CLASS="dddefault">60</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">180.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">MGMT</TD><TD COLSPAN="2" CLASS="dddefault">2001</TD><TD COLSPAN="3" CLASS="dddefault">Principles of Management</TD><TD CLASS="dddefault">53</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">159.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">3000</TD><TD COLSPAN="3" CLASS="dddefault">Auditing 1</TD><TD CLASS="dddefault">WD</TD><TD CLASS="dddefault">0.00000</TD><TD COLSPAN="4" CLASS="dddefault">0.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Summer 2006</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault">68.40000</TD><TD COLSPAN="2" CLASS="dddefault">1026.000</TD><TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">GNED</TD><TD COLSPAN="2" CLASS="dddefault">1017</TD><TD COLSPAN="3" CLASS="dddefault">Understanding Art</TD><TD CLASS="dddefault">59</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">177.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">3002</TD><TD COLSPAN="3" CLASS="dddefault">Adv Computerized Accounting</TD><TD CLASS="dddefault">70</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">210.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">3000</TD><TD COLSPAN="3" CLASS="dddefault">Advanced Financial Accounting</TD><TD CLASS="dddefault">72</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">216.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">BUSI</TD><TD COLSPAN="2" CLASS="dddefault">1007</TD><TD COLSPAN="3" CLASS="dddefault">Payroll Compliance</TD><TD CLASS="dddefault">76</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">228.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">3004</TD><TD COLSPAN="3" CLASS="dddefault">Acctg Information Systems</TD><TD CLASS="dddefault">65</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">195.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Fall 2006</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault">68.00000</TD><TD COLSPAN="2" CLASS="dddefault">204.000</TD><TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">2003</TD><TD COLSPAN="3" CLASS="dddefault">Cost Accounting 1</TD><TD CLASS="dddefault">68</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">204.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Winter 2007</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault">50.00000</TD><TD COLSPAN="2" CLASS="dddefault">150.000</TD><TD COLSPAN="2" CLASS="dddefault">3.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">3000</TD><TD COLSPAN="3" CLASS="dddefault">Auditing 1</TD><TD CLASS="dddefault">50</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">150.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Academic Session</CAPTION>
+<TR>
+<TH COLSPAN="12" CLASS="ddtitle" scope="colgroup">Academic Session</TH>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Session : </TH><TD COLSPAN="10" CLASS="dddefault">Summer 2007</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Major :
+          </TH><TD COLSPAN="10" CLASS="dddefault">Business Admin - Accounting</TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row">Attempted Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Earned Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">Total Points</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row">GPA Hours</TH><TH COLSPAN="2" CLASS="ddlabel" scope="row"></TH>
+</TR>
+<TR>
+<TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault">60.40000</TD><TD COLSPAN="2" CLASS="dddefault">906.000</TD><TD COLSPAN="2" CLASS="dddefault">15.00000</TD><TD COLSPAN="2" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD COLSPAN="10" CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE CLASS="datadisplaytable" SUMMARY="This table will display the                                    user's Academic History in the following                                    sections:  Degree Information, Transfer                                    Credit By Institution, Institution                                    Credit, Transcript Totals ,                                    Courses In Progress." WIDTH="80%">
+<CAPTION class="captiontext">Courses</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col">Subject</TH><TH COLSPAN="2" CLASS="ddheader" scope="col">Course</TH><TH COLSPAN="3" CLASS="ddheader" scope="col">Title</TH><TH CLASS="ddheader" scope="col">Grade</TH><TH CLASS="ddheader" scope="col">Credit Hours</TH><TH COLSPAN="4" CLASS="ddheader" scope="col">Quality Points</TH><TH class="ddheader" scope="col">Repeat Code</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">3003</TD><TD COLSPAN="3" CLASS="dddefault">Intermediate Accounting 3</TD><TD CLASS="dddefault">54</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">162.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">STAT</TD><TD COLSPAN="2" CLASS="dddefault">2001</TD><TD COLSPAN="3" CLASS="dddefault">Statistics 2</TD><TD CLASS="dddefault">50</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">150.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">ACCT</TD><TD COLSPAN="2" CLASS="dddefault">2000</TD><TD COLSPAN="3" CLASS="dddefault">Cost Accounting 2</TD><TD CLASS="dddefault">60</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">180.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">FNCE</TD><TD COLSPAN="2" CLASS="dddefault">3003</TD><TD COLSPAN="3" CLASS="dddefault">Auditing 2</TD><TD CLASS="dddefault">70</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">210.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+<TR>
+<TD CLASS="dddefault">PSYL</TD><TD COLSPAN="2" CLASS="dddefault">1002</TD><TD COLSPAN="3" CLASS="dddefault">Introduction to Psychology 2</TD><TD CLASS="dddefault">68</TD><TD CLASS="dddefault">3.00000</TD><TD COLSPAN="4" CLASS="dddefault">204.000</TD><TD CLASS="dddefault"></TD>
+</TR>
+</TABLE>
+<BR>
+<BR>
+<br>
+<br>
+<br>
+</BODY>
+</HTML>
