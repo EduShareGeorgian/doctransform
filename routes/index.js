@@ -17,6 +17,8 @@ router.post('/', function(req, res) {
             console.log(err);
             res.send('error');
         } else {
+            res.header('Access-Control-Allow-Origin', '*');
+			res.header('Access-Control-Allow-Headers', 'X-Requested-With');
             res.sendFile(path.dirname(module.parent.filename) + '/result.html');
         }
     });
