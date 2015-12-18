@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+                xmlns:ct="urn:org:pesc:message:CollegeTranscript:v1.3.0">
     <!--ibah   10-Aug-2015 PR-  000288  RO - Course Exemption Project - eTMS XML Transcript (STUVIEW Web Display) -->
     <xsl:variable name="decfmt">####0.00</xsl:variable>
 
-    <xsl:template match="/">
+    <xsl:template match="ct:CollegeTranscript">
         <HTML>
             <HEAD>
                 <STYLE TYPE="text/css">
@@ -168,12 +169,17 @@
                 </STYLE>
             </HEAD>
             <BODY>
+                <xsl:template match="TransmissionData">
+                    <xsl:value-of select="DocumentID"/>
+                </xsl:template>
+
                 <div id="content">
-                    <xsl:apply-templates select="GBCTranscript/GBCSTUDENT"/>
+                    <!--<xsl:apply-templates select="GBCTranscript/GBCSTUDENT"/>-->
                     <div id="content_title">Student Transcript</div>
-                    <xsl:apply-templates select="GBCTranscript/xml-fragment"/>
+                    <xsl:apply-templates select="TransmissionData"/>
+                    <xsl:apply-templates select="Student"/>
                     <div class="clearleft"></div>
-                    <xsl:apply-templates select="GBCTranscript/GBCSTUDENT"/>
+                    <!--<xsl:apply-templates select="GBCTranscript/GBCSTUDENT"/>-->
                 </div>
             </BODY>
         </HTML>
@@ -362,7 +368,9 @@
                     <TR>
                         <TH CLASS="ddheader subject" scope="col" >Subject</TH>
                         <TH CLASS="ddheader course" scope="col" >Course</TH>
-                        <TH COLSPAN="6" CLASS="ddheader title" scope="col" >Title</TH>
+                        <TH COLSPAN="8" CLASS="ddheader title" scope="col" >Title</TH>
+						<TH CLASS="ddheader coursecreditlevel" scope="col" >Level</TH>
+						<TH CLASS="ddheader courseacademicgradescalecode" scope="col" >Grade Scale</TH>
                         <TH CLASS="ddheader grade" scope="col" >Grade</TH>
                         <TH CLASS="ddheader creditearned" scope="col" >Credit Earned</TH>
                         <TH CLASS="ddheader quality" scope="col" >Quality Pts</TH>
@@ -373,7 +381,9 @@
                                 <tr>
                                     <TD CLASS="dddefault" ><xsl:value-of select="CourseSubjectAbbreviation"/></TD>
                                     <TD CLASS="dddefault" ><xsl:value-of select="CourseNumber"/></TD>
-                                    <TD CLASS="dddefault" COLSPAN="6" ><xsl:value-of select="CourseTitle"/></TD>
+                                    <TD CLASS="dddefault" COLSPAN="8" ><xsl:value-of select="CourseTitle"/></TD>
+									<TD CLASS="dddefault" ><xsl:value-of select="CourseCreditLevel"/></TD>
+									<TD CLASS="dddefault" ><xsl:value-of select="CourseAcademicGradeScaleCode"/></TD>
                                     <TD CLASS="dddefault"  ><xsl:value-of select="CourseAcademicGrade"/></TD>
                                     <TD CLASS="dddefault" align="right">
                                         <xsl:choose>
@@ -386,6 +396,11 @@
                                         </xsl:choose>
                                     </TD>
                                 </tr>
+                                <xsl:if test="CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGradeScaleCode">
+                                    <tr><td CLASS="dddefault" COLSPAN="11">
+                                        Qualifier: <xsl:value-of select="CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGradeScaleCode" /> Grade: <xsl:value-of select="CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGrade"/><br/>
+                                    </td></tr>
+                                </xsl:if>
                                 <xsl:if test="(NoteMessage)">
                                     <tr><td CLASS="dddefault" COLSPAN="11">
                                         <xsl:for-each select="NoteMessage"><xsl:value-of select="."/><br/> </xsl:for-each>
