@@ -1,0 +1,6 @@
+devErrorsEnabled:true
+debuggingEnabled:false
+debugHeaderEnabled:false
+loggingEnabled:true
+logDirectory:\apps\local\transformdoc\logs
+node_env:production
