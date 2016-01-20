@@ -48,8 +48,13 @@ function getLatestFromGithub() {
 #
 function build() {
     # Cleanup filesystem from previous build
-    Write-Output "Removing old build directory $($buildRoot)"
-    Remove-Item -path $buildRoot -force -recurse -WarningAction "Ignore" -ErrorAction "Ignore"
+    if (Get-Item $buildRoot) {
+        Write-Output "Removing old build directory $($buildRoot)"
+        # Remove-Item : The specified path, file name, or both are too long. The fully qualified file name must be less than 260
+        # The following is a hack to avoid the above error when using:
+        #   Remove-Item -path $buildRoot -force -recurse -WarningAction "Ignore"
+        & 'cmd' /C "rd $($buildRoot) /q /s"
+    }
     New-Item $buildRoot -type directory
 
     Push-Location $buildRoot
@@ -59,7 +64,7 @@ function build() {
     Set-Location $buildApplicationRoot
     Write-Output "Installing Node Modules in $($buildApplicationRoot)"
     & 'npm' install --msvs_version=2012
-    Remove-Item -path "result.html" -WarningAction "Ignore" -ErrorAction "Ignore"
+    Remove-Item -path "result.html" -WarningAction "Ignore"
     Pop-Location
 }
 
@@ -71,7 +76,7 @@ function stopApplication() {
 
     # stop IIS worker processes
     if ($currentState -ne "Stopped" ) {
-        Stop-WebAppPool -Name $webAppPoolName -WarningAction "Ignore" -ErrorAction "Ignore"
+        Stop-WebAppPool -Name $webAppPoolName -WarningAction "Ignore"
     }
 
     # wait for all Node processes to stop
