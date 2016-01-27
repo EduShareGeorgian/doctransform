@@ -253,11 +253,31 @@
                         Ext: <xsl:value-of select="Source/Organization/Contacts/Phone/PhoneNumberExtension"/>
                     </xsl:if>
                 </td></tr>
+                <xsl:if test="(Source/Organization/Contacts/FaxPhone)">
+                    <tr><td class="label1">Fax: </td><td><xsl:if test="(Source/Organization/Contacts/FaxPhone/AreaCityCode)">
+                        &#40;<xsl:value-of select="Source/Organization/Contacts/FaxPhone/AreaCityCode"/>&#41;&#160;
+                    </xsl:if>
+                        <xsl:value-of select="Source/Organization/Contacts/FaxPhone/PhoneNumber"/>&#160;
+                        <xsl:if test="(Source/Organization/Contacts/FaxPhone/PhoneNumberExtension)">
+                            Ext: <xsl:value-of select="Source/Organization/Contacts/FaxPhone/PhoneNumberExtension"/>
+                        </xsl:if>
+                    </td></tr>
+                </xsl:if>
+                <xsl:if test="(Source/Organization/Contacts/Email/EmailAddress)">
+                    <tr><td class="label1">Email: </td><td>
+                        <xsl:value-of select="Source/Organization/Contacts/Email/EmailAddress"/>
+                    </td></tr>
+                </xsl:if>
                 <tr><td class="label1">Address: </td><td>
                     <xsl:for-each select="Source/Organization/Contacts/Address/AddressLine"><xsl:value-of select="."/> &#45; </xsl:for-each>
                     <xsl:value-of select="Source/Organization/Contacts/Address/City"/>&#160;
                     <xsl:value-of select="Source/Organization/Contacts/Address/StateProvinceCode"/>&#160;
                     <xsl:value-of select="Source/Organization/Contacts/Address/PostalCode"/>&#160;</td></tr>
+                <xsl:if test="(Source/Organization/Contacts/NoteMessage)">
+                    <tr><td class="label1">Email: </td><td>
+                        <xsl:value-of select="Source/Organization/Contacts/NoteMessage"/>
+                    </td></tr>
+                </xsl:if>
                 <tr> <td colspan="4"><b>Destination Organisation</b></td></tr>
                 <tr><td class="label1">CSIS - Name: </td><td>
                     <xsl:choose>
@@ -324,6 +344,35 @@
                     <xsl:for-each select="../AcademicRecord/AdditionalStudentAchievements/NoteMessage"><xsl:value-of select="."/><br/> </xsl:for-each>
                 </td></tr>
             </table>
+            <xsl:if test="(../AcademicRecord/AcademicSummary)">
+                <div class="section_title">Student Information</div>
+                <table>
+                    <tr>
+                        <td class="label2">Academic Summary Level: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/AcademicSummaryLevel"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label2">Credit Hours Attempted: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursAttempted"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label2">Credit Hours Earned: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursEarned"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label2">Credit Unit: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditUnit"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label2">GPA: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/GradePointAverage"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label2">Credit Hours for GPA: </td>
+                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursforGPA"/></td>
+                    </tr>                    
+                </table>
+            </xsl:if>
         </div>
     </xsl:template>
 
