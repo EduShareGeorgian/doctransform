@@ -343,12 +343,11 @@
                 <tr><td colspan="5">
                     <xsl:for-each select="../AcademicRecord/AdditionalStudentAchievements/NoteMessage"><xsl:value-of select="."/><br/> </xsl:for-each>
                 </td></tr>
-            </table>
+            
             <xsl:if test="(../AcademicRecord/AcademicSummary)">
-                <div class="section_title">Student Information</div>
-                <table>
-                    <tr>
-                        <td class="label2">Academic Summary Level: </td>
+                <tr><td colspan="4"><b>Academic Summary</b></td></tr>tr>                
+                <tr>
+                        <td class="label2">Level: </td>
                         <td><xsl:value-of select="../AcademicRecord/AcademicSummary/AcademicSummaryLevel"/></td>
                     </tr>
                     <tr>
@@ -370,9 +369,9 @@
                     <tr>
                         <td class="label2">Credit Hours for GPA: </td>
                         <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursforGPA"/></td>
-                    </tr>                    
-                </table>
+                    </tr>                                    
             </xsl:if>
+            </table>
         </div>
     </xsl:template>
 
