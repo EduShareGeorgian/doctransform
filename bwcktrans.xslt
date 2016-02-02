@@ -344,32 +344,32 @@
                     <xsl:for-each select="../AcademicRecord/AdditionalStudentAchievements/NoteMessage"><xsl:value-of select="."/><br/> </xsl:for-each>
                 </td></tr>
             
-            <xsl:if test="(../AcademicRecord/AcademicSummary)">
-                <tr><td colspan="4"><b>Academic Summary</b></td></tr>tr>                
+            <xsl:if test="(../AcademicRecord/AcademicSummary/AcademicSummaryLevel)">
+                <tr><td colspan="4"><b>Academic Summary</b></td></tr>        
                 <tr>
-                        <td class="label2">Level: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/AcademicSummaryLevel"/></td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Credit Hours Attempted: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursAttempted"/></td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Credit Hours Earned: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursEarned"/></td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Credit Unit: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditUnit"/></td>
-                    </tr>
-                    <tr>
-                        <td class="label2">GPA: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/GradePointAverage"/></td>
-                    </tr>
-                    <tr>
-                        <td class="label2">Credit Hours for GPA: </td>
-                        <td><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursforGPA"/></td>
-                    </tr>                                    
+                	<td class="label2">Level: </td>
+                    <td><xsl:value-of select="../AcademicRecord/AcademicSummary/AcademicSummaryLevel"/></td>
+                </tr>                      
+                <tr>
+                	<td colspan="5">
+	                	<table>
+	                        <TR>
+	                            <TH CLASS="ddheader GPAType" scope="col" >Type</TH>
+	                            <TH CLASS="ddheader GPAhours" scope="col" >GPA Hours</TH>
+	                            <TH CLASS="ddheader GPA" scope="col" >GPA</TH>
+	                            <TH  CLASS="ddheader Attempted" scope="col" >Attempted</TH>
+	                            <TH CLASS="ddheader creditearned" scope="col" >Earned</TH>                            
+	                        </TR>
+	                        <tr>
+	                        	<td CLASS="dddefault"><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditUnit"/></td>
+	                        	<td CLASS="dddefault" align="right"><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursEarned"/></td>
+	                        	<td CLASS="dddefault" align="right"><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/GradePointAverage"/></td>
+	                        	<td CLASS="dddefault" align="right"><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursAttempted"/></td>
+	                        	<td CLASS="dddefault" align="right"><xsl:value-of select="../AcademicRecord/AcademicSummary/GPA/CreditHoursforGPA"/></td>
+	                        </tr>
+	                    </table>
+	                </td>
+                </tr>                
             </xsl:if>
             </table>
         </div>
