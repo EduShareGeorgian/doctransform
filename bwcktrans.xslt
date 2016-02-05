@@ -328,8 +328,9 @@
                     <td class="label2">Date of Birth: </td><td><xsl:value-of select="Birth/BirthDate"/></td><td>&#160;</td>
                     <td class="label2">Day of Birth : </td><td><xsl:value-of select="Birth/Birthday"/></td>
                 </tr>
-                <tr><td class="label2">Composite Name: </td><td> <xsl:value-of select="CompositeName"/> </td><td>&#160;</td>
-                    <td class="label2">Alternate Name: </td><td><xsl:value-of select="Name/AlternateName"/></td>
+                <tr>
+                    <td class="label2">Alternate Last name: </td><td><xsl:value-of select="AlternateName/LastName"/></td><td>&#160;</td>
+                    <td class="label2">         First name: </td><td><xsl:value-of select="AlternateName/FirstName"/></td>
                 </tr>
                 <tr><td class="label2">Email: </td><td colspan="4"><xsl:value-of select="Contacts/Email/EmailAddress"/></td></tr>
                 <tr><td class="label2">High School: </td><td colspan="4"><xsl:value-of select="HighSchool/OrganizationName"/></td></tr>
