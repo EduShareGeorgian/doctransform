@@ -3,7 +3,7 @@
                 xmlns:ct="urn:org:pesc:message:CollegeTranscript:v1.3.0">
     <!--ibah   10-Aug-2015 PR-  000288  RO - Course Exemption Project - eTMS XML Transcript (STUVIEW Web Display) -->
     <xsl:variable name="decfmt">####0.00</xsl:variable>
-
+    <xsl:output method="html" doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" doctype-public="-//W3C//DTD XHTML 1.1//EN" indent="yes" omit-xml-declaration="yes"/>
     <xsl:template match="ct:CollegeTranscript">
         <HTML>
             <HEAD>
